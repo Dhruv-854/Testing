@@ -1,0 +1,12 @@
+1. select count(ename) from employeeMaster group by (department);
+2. select count(ename) from employeeMaster where city and department group by (city , department);
+3. select max(salary) from employeeMaster order by salary desc;
+4. select ename from employeeMaster where group by (city , department) not department;
+5. select * from employeeMaster where employee = 0 inner join departmentMaster on employeeMaster.deptNo = departmentMaster.deptNo;
+6. select ename from employeeMaster where hireDate between(1-'jan'-2022,30-'dec'-2023);
+7(1). inner join 
+	select * from employee master inner join departmentMaster on employeeMaster.deptNo = departmentMaster.deptNo;
+7(2). left join
+	select * from employee master left join departmentMaster on employeeMaster.deptNo = departmentMaster.deptNo;
+7(3). right join
+	select * from employee master right join departmentMaster on employeeMaster.deptNo = departmentMaster.deptNo;
